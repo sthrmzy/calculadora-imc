@@ -1,23 +1,84 @@
 body{
-    background-color: #EAEFD3;
+    background-image: url(/calculadora-imc-main/img/background.jpg);
+    background-size: 100%;
+    background-position: center;
 }
 
 .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    background-color: #DCC48E;
-    border-radius: 30px;
-    padding: 30px;
-    margin: 40px 20vw 0 20vw;
+    width:300px;
+    height:350px;
+    margin:200px auto;
+    padding: 100px;
+}
+
+.glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.title{
+    color: #fff;
+    font-family: Arial; 
+    font-size: 2em;
+    font-weight: bold;
 }
 
 .input{
-    display: flex;
-    flex-direction: column;
-    background-color: #505168;
-    border-radius: 30px;
-    padding: 10px;
-    margin: 20px;
+    position: relative;
+   width: 310px;
+   margin: 30px 0;
+   border-bottom: 2px solid #fff;
+
 }
+
+.input label{
+    position: absolute;
+    top:50%;
+    left:5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    font-family:  Arial, Helvetica, sans-serif ;
+    font-weight: bold;
+}
+
+.input input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+}
+
+ #altura, #peso, #nome{
+     color: #9e9c9c;
+     position: relative;
+     left:60px;
+     
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    /* Estilos personalizados aqui */
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0; /* Pode ser necessário ajustar o espaçamento */
+}
+
+
+
+.result{
+    margin: 30px;
+    padding: 10px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    border: #fff solid 1px;
+    border-radius: 50px;
+}
+
